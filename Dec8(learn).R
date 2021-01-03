@@ -18,9 +18,18 @@ class(x)
 x<-factor(c("Hrithik","Rishiv","Hrithik","Rishiv","Rishiv"),levels=c("Rishiv","Hrithik"))
 x
 
+x<-factor(c("Male","Female","Female","Male","Other","Other","Female","Other"),levels=c("Male","Female","Other"))
+x
+table(x)
+unclass(x)
+attributes(x)
+
+
+
 x<-c(1,3,NA,NaN,9,4)
 x
-is.nan(x)
+is.nan(x)  # is.nan() only takes NaN values
+is.na(x)  # is.na() takes NaN values as well.
 
 x<-data.frame(S.No=1:5,Item=c("Pizza","Burger","Noodles","French Fries","Cold Drink"),Unit=c(1,1,1,1,1))
 x
