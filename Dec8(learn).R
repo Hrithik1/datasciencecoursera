@@ -9,6 +9,7 @@ attributes(x)
 
 x<-factor(c("Male","Female","Male","Female","Female"),levels=c("Male","Female"))
 x
+
 table(x)
 unclass(x)
 attributes(x)
